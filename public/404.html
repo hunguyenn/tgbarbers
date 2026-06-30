@@ -6,9 +6,9 @@
     <script type="text/javascript">
       // Single Page Apps for GitHub Pages
       // https://github.com/rafgraph/spa-github-pages
-      // Keeps the /tgbarbers/ repo segment, then encodes the rest of the
-      // path so index.html can restore it via the snippet in <head>.
-      var pathSegmentsToKeep = 1;
+      // Served at the domain root, so keep zero path segments and encode
+      // the whole path for index.html to restore via the snippet in <head>.
+      var pathSegmentsToKeep = 0;
 
       var l = window.location;
       l.replace(
